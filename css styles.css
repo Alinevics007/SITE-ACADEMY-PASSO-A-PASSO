@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o header */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 22px 0;
+}
+
+/* Estilos para a navegação */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul li {
+    margin-left: 20px;
+}
+
+.nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+    FONT-FAMILY: 'Anton SC';
+}
+
+.nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para o footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+/* Estilos para as seções */
+section {
+    padding: 30px 20px;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.8em;
+    line-height: 1.6;
+    font-weight: bold;
+    font-family: "Anton SC", sans-serif;
+    color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+#secao1 h1{
+    font-family: Danfo;
+}
+
+#secao2 h1{
+    font-family: Danfo;
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.item {
+    flex: 1 1 300px;
+    background-color: #fff;
+    padding: 20px;
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.item .valor {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 15px;
+    text-decoration: line-through;
+}
+
+.item .desc {
+    margin-bottom: 15px;
+}
+
+.item button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #45a049;
+}
+
+.texto {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 20px 10%;
+}
+
+.logo h1 {
+    color: #fff;
+    font-family: Danfo;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cont {
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 750px;
+    width: 100%;
+    text-align: center;
+    margin: 50px auto;
+}
+
+h1 {
+    color: #333;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin: 10px 0;
+    color: #555;
+}
+
+.contact-info a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.loja img {
+    display: block;
+    max-width: 90%;
+    height: auto;
+    margin: 20px auto;
+    border: 5px solid #333; /* Largura da borda, estilo da borda, cor da borda */
+    border-radius: 10px; /* Cantos arredondados */
+    padding: 10px; /* Espaço entre a borda e a foto */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidade */
+}
+
+@media (max-width: 768px) {
+    .nav ul {
+        flex-direction: column;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+    }
+
+    .containers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 90%;
+    }
+
+    section h1 {
+        font-size: 4em;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+}
+
+.address{
+    font-weight: bold;
+}
+
+.marquee-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+    color: #fff;
+    padding: 81px 0;
+    position: relative;
+    font-family: Danfo;
+    font-size: 5em;
+    align-items: center;
+    display: flex;
+}
+
+.marquee-text {
+    display: inline-block;
+    white-space: nowrap;
+    position: absolute;
+    animation: marquee 20s linear infinite;
+    direction: rtl;
+}
+
+@keyframes marquee {
+    from { transform: translateX(87%); }
+    to { transform: translateX(-100%); }
+}
